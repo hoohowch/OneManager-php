@@ -2525,19 +2525,6 @@ function render_list($path = '', $files = '')
 
     $theme_arr = scandir('theme');
     $html .= '
-<div style="position: fixed;right: 10px;bottom: 10px;/*color: rgba(247,247,249,0);*/">
-    <select name="theme" onchange="changetheme(this.options[this.options.selectedIndex].value)">
-        <option value="">'.getconstStr('Theme').'</option>';
-    foreach ($theme_arr as $v1) {
-        if ($v1!='.' && $v1!='..') $html .= '
-        <option value="'.$v1.'" '.($v1==$theme?'selected="selected"':'').'>'.$v1.'</option>';
-    }
-    //$tmp = getConfig('customTheme');
-    //if ($tmp!='') $html .= '
-    //    <option value="" '.($tmp==$theme?'selected="selected"':'').'>customTheme</option>';
-    $html .= '
-        </select>
-</div>
 <script type="text/javascript">
     function changetheme(str)
     {
