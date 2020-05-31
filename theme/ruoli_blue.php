@@ -525,10 +525,6 @@
             </center>
         </div>
 	</div>
-<?php   }
-    } ?>
-    <div style="text-align:center;">OneManager by 逸笙 theme by 若离</div>
-</body>
 <?php if ($files) { ?>
 <?php if ($head||$readme) { ?><link rel="stylesheet" href="//unpkg.zhimg.com/github-markdown-css@3.0.1/github-markdown.css">
 <script type="text/javascript" src="//unpkg.zhimg.com/marked@0.6.2/marked.min.js"></script><?php } ?>
